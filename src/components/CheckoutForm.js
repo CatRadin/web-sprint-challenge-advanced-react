@@ -16,7 +16,7 @@ const initialValue = {
 
 const CheckoutForm = (props) => {
 //Passed from useForm---------------------------------------------------  
-  const [showSuccessMessage,values, handleChanges, handleSubmit] = useForm(initialValue);
+  const [showSuccessMessage, values, handleChanges, handleSubmit] = useForm(initialValue);
 
   return (
     <>

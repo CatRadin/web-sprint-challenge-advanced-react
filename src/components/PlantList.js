@@ -17,15 +17,14 @@ constructor(){
 }
 //Component Did Mount fetch-------------------------------------------------------------------
 componentDidMount(){
-  axios
-  .get('http://localhost:3333/plants')
-  .then((res) => {
-    // console.log(res.data)
-    this.setState({
-      plants: res.data.plantsData
-    });
-  });
-  // .catch(err => console.log(err));
+  axios.get('http://localhost:3333/plants')
+  .then(res => {
+    console.log("RES----:", res)
+    this.setState({plants: res.data.plantsData});
+  })
+  .catch(err => {
+    console.log(err);
+  })
 }
 
   /*********  DON'T CHANGE ANYTHING IN THE RENDER FUNCTION *********/

@@ -4,13 +4,13 @@ import { useState } from 'react'
 
 export default function useForm(initialValue) {
 
-//State-----------------------------------------------------------------------------
-const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  //State-----------------------------------------------------------------------------
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [values, setValues] = useState(initialValue);
 
-//Handle Changes ------------------------------------------------------------------------------
-const handleChanges = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
+  //Handle Changes ------------------------------------------------------------------------------
+  const handleChanges = (e) => {
+  setValues({ ...values, [e.target.name]: e.target.value });
   };
 
 //Submit--------------------------------------------------------------------------
